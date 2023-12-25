@@ -18,4 +18,22 @@ dependencyResolutionManagement {
     }
 }
 
-include(":composeApp")
+/* (Backend / Application) */
+include(":Backend:Application:MintLab")
+
+/* (Client / Application) */
+include(":Client:Platform-Android:Application:MintLab")
+include(":Client:Platform-Desktop:Application:MintLab")
+include(":Client:Platform-iOS:Application:MintLab")
+include(":Client:Platform-Web:Application:MintLab")
+
+/* (Client) */
+include(":Client:Resource")
+include(":Client:DesignSystem")
+
+/* (Foundation) */
+include(":Foundation:Model")
+include(":Foundation:Kotlin")
+
+/* (iOS wrapping module) */
+include(":iosMintLab")
