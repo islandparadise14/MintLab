@@ -22,10 +22,10 @@ dependencyResolutionManagement {
 include(":Backend:Application:MintLab")
 
 /* (Client / Application) */
-include(":Client:Platform-Android:Application:MintLab")
-include(":Client:Platform-Desktop:Application:MintLab")
-include(":Client:Platform-iOS:Application:MintLab")
-include(":Client:Platform-Web:Application:MintLab")
+include(":Client-Android:Application:MintLab")
+include(":Client-Desktop:Application:MintLab")
+include(":Client-iOS:Application:MintLab")
+include(":Client-Web:Application:MintLab")
 
 /* (Client) */
 include(":Client:Resource")

@@ -22,13 +22,13 @@ kotlin {
         val commonMain by getting {
             resources.setSrcDirs(
                 listOf(
-                    "${project(":Client:Platform-iOS:Application:MintLab").projectDir}/src/commonMain/resources"
+                    "${project(":Client-iOS:Application:MintLab").projectDir}/src/commonMain/resources"
                 )
             )
         }
         
         commonMain.dependencies {
-            implementation(project(":Client:Platform-iOS:Application:MintLab"))
+            implementation(project(":Client-iOS:Application:MintLab"))
 
             implementation(compose.runtime)
             implementation(compose.foundation)
