@@ -1,16 +1,14 @@
 package com.islandparadise14.mintlab
 
-import io.ktor.server.application.*
-import io.ktor.server.engine.*
-import io.ktor.server.netty.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import com.islandparadise14.mintlab.configure.configureRouting
+import com.islandparadise14.mintlab.configure.configureSerialization
+import io.ktor.server.application.Application
+import io.ktor.server.netty.EngineMain
 
-fun main() {
-    embeddedServer(Netty, port = SERVER_PORT, host = "0.0.0.0", module = Application::module)
-        .start(wait = true)
-}
+/** resources/application.conf 필요 */
+fun main(args: Array<String>): Unit = EngineMain.main(args)
 
 fun Application.module() {
-    
+    configureRouting()
+    configureSerialization()
 }
