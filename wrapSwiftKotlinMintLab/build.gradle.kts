@@ -13,7 +13,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
-            baseName = "iosMintLab"
+            baseName = "wrapSwiftKotlinMintLab"
             isStatic = true
         }
     }
@@ -22,13 +22,13 @@ kotlin {
         val commonMain by getting {
             resources.setSrcDirs(
                 listOf(
-                    "${project(":Client-iOS:Application:MintLab").projectDir}/src/commonMain/resources"
+                    "${project(":Frontend-iOS:Application:MintLab").projectDir}/src/commonMain/resources"
                 )
             )
         }
         
         commonMain.dependencies {
-            implementation(project(":Client-iOS:Application:MintLab"))
+            implementation(project(":Frontend-iOS:Application:MintLab"))
 
             implementation(compose.runtime)
             implementation(compose.foundation)

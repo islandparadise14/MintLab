@@ -23,7 +23,7 @@ fun App() {
         var showImage by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
-                greetingText = "Compose5"
+                greetingText = "Compose9"
                 showImage = !showImage
             }) {
                 Text(greetingText)

@@ -1,6 +1,6 @@
 import UIKit
 import SwiftUI
-import iosMintLab
+import wrapSwiftKotlinMintLab
 
 struct ComposeView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {

@@ -18,22 +18,21 @@ dependencyResolutionManagement {
     }
 }
 
-/* (Backend / Application) */
+/** (Backend / Application) */
 include(":Backend:Application:MintLab")
 
-/* (Client / Application) */
-include(":Client-Android:Application:MintLab")
-include(":Client-Desktop:Application:MintLab")
-include(":Client-iOS:Application:MintLab")
-include(":Client-Web:Application:MintLab")
+/** (Frontend / Application) */
+include(":Frontend-Android:Application:MintLab")
+include(":Frontend-Desktop:Application:MintLab")
+include(":Frontend-iOS:Application:MintLab")
+include(":Frontend-Web:Application:MintLab")
 
-/* (Client) */
-include(":Client:Resource")
-include(":Client:DesignSystem")
+/** (Frontend) */
+include(":Frontend:Resource")
+include(":Frontend:Design")
 
-/* (Foundation) */
-include(":Foundation:Model")
-include(":Foundation:Kotlin")
+/** (Core) */
+include(":Core:Kotlin")
 
-/* (iOS wrapping module) */
-include(":iosMintLab")
+/** (iOS wrapping module) */
+include(":wrapSwiftKotlinMintLab")
